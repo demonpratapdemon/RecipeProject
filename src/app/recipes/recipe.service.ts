@@ -21,12 +21,10 @@ export class RecipeService {
   ];
   constructor(private shoppingService : ShoppingListService) {}
 
-  // tslint:disable-next-line: typedef
   getRecipes() {
     return this.recipes.slice();
   }
 
-  // tslint:disable-next-line: typedef
   addIngredientsToShoppingList(ingredients: Ingredient[]) {
     this.shoppingService.addIngredients(ingredients);
   }
