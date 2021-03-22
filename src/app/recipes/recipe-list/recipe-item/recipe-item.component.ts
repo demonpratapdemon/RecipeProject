@@ -14,9 +14,5 @@ export class RecipeItemComponent implements OnInit {
   constructor(private recipeService: RecipeService) {}
 
   ngOnInit(): void {}
-
-  // tslint:disable-next-line: typedef
-  onSelected() {
-    this.recipeService.recipeSelected.emit(this.recipe);
-  }
+  
 }
