@@ -18,6 +18,7 @@ import { DropdownDirective } from './shared/dropdown.directive';
 import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.component';
 import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
 import { AuthComponent } from './auth/auth.component';
+import { AuthService } from './auth/auth.service';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,7 @@ import { AuthComponent } from './auth/auth.component';
     AuthComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, RouterModule, FormsModule],
-  providers: [RecipeService, ShoppingListService],
+  providers: [RecipeService, ShoppingListService, AuthService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
